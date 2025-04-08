@@ -37,10 +37,6 @@ A responsive and interactive educational website built for the PWEB course — 2
 
 ---
 
-## 📫 Contact & Resources
+## 📫 References
 
 - [History of Tunisia on Wikipedia](https://en.wikipedia.org/wiki/History_of_Tunisia)
-- Emails:  
-  - syrinebenmohamed192004@gmail.com  
-  - haninechrigui1@gmail.com  
-- Social links: *[To be added]*
