@@ -1,0 +1,242 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  background: #1e1e1e url("pic.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Assure que le footer reste en bas */
+}
+body::before {
+  content: "";
+  position: fixed; /* Fixé pour couvrir toute la page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  backdrop-filter: blur(2px);
+  z-index: -1; /* En arrière-plan */
+}
+
+/* Header */
+.navbar {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+.navbar ul li a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #b9d9eb;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+/* Section Tours */
+.tour {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+.tours {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+.text {
+  padding: 10px 30px;
+  position: relative;
+  width: 20%;
+  background: #333;
+}
+.text-box {
+  padding: 20px 30px;
+  background-color: #5d8aa8;
+  border-radius: 1px;
+  font-size: 15px;
+}
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+.tours::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+h1,
+h2 h3 {
+  color: #f5fffa;
+}
+
+.tours .texte {
+  flex: 2;
+  max-width: 60%;
+}
+.tours .text {
+  flex: 2;
+  max-width: 60%;
+}
+
+.tours .text h2,
+.tours .text h3,
+.tours .text p {
+  margin: 15px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.tours .images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.images img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 200px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  gap: 10px;
+  display: inline;
+  float: right;
+  padding: 2px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333; /* Couleur de fond sombre */
+  color: #fff; /* Texte en blanc */
+  padding: 20px 0; /* Espace autour du footer */
+  font-family: Arial, sans-serif;
+}
+.fo {
+  max-width: 1200px; /* Largeur maximale */
+  margin: 0 auto; /* Centrer le footer */
+  display: flex; /* Disposition en flexbox */
+  flex-wrap: wrap; /* Permet de passer à une nouvelle ligne sur les petits écrans */
+  justify-content: space-between; /* Espacement égal entre les colonnes */
+}
+.r {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-col {
+  flex: 1; /* Chaque colonne prend un espace égal */
+  min-width: 200px; /* Largeur minimale */
+  margin: 10px; /* Espacement entre les colonnes */
+}
+
+.footer-col h5 {
+  font-size: 16px; /* Taille du titre */
+  margin-bottom: 10px; /* Espacement sous le titre */
+  color: #d4af72; /* Couleur de texte pour le titre */
+  text-transform: uppercase; /* Mettre en majuscules */
+}
+
+.footer-col ul {
+  list-style: none; /* Supprimer les puces */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px; /* Espacement entre les éléments */
+}
+
+.footer-col ul li a {
+  color: #fff; /* Couleur des liens */
+  text-decoration: none; /* Supprimer le soulignement */
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  color: #d4af72; /* Changer la couleur au survol */
+  text-decoration: underline;
+}
+
+.social-links a {
+  color: #fff; /* Couleur des icônes sociales */
+  font-size: 18px; /* Taille des icônes */
+  margin-right: 15px; /* Espacement entre les icônes */
+  text-decoration: none; /* Supprimer le soulignement */
+}
+.social-links a:hover {
+  color: #d4af72; /* Couleur des icônes au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-col {
+    flex: 1 1 100%; /* Chaque colonne occupe toute la largeur */
+    text-align: center; /* Centrer le texte */
+  }
+
+  .social-links {
+    margin-top: 10px;
+    display: block;
+  }
+}
