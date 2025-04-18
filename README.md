@@ -2,10 +2,10 @@
 
 A responsive and interactive educational website built for the PWEB course — 2LNIG4
 
-## 👩‍💻 Project Authors
+## 👩‍💻 Project Author
 
 - **Syrine Ben Mohamed** – syrinebenmohamed192004@gmail.com  
-- **Hanin Chrigui** – haninechrigui1@gmail.com
+
 
 ---
 
